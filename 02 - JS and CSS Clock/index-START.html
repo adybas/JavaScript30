@@ -62,13 +62,13 @@
       background: black;
       position: absolute;
       top: 50%;
+      transform-origin: 100%; /* this attribute changes where the line will rotate on the x-axis */
+      transform: rotate(90deg); /* this attribute will rotate the hands vertically (divs are blocks, so the lines currently are displayed horizontally in the clock face ) */
+      transition: all 0.05s;
     }
 
   </style>
 
-  <script>
-
-
-  </script>
+  <script src="script.js" charset="utf-8"></script>
 </body>
 </html>
