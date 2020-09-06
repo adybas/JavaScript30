@@ -21,6 +21,8 @@ function setDate() {
     const currentHour = currentTime.getHours()
     const hourDegree = ((currentHour / 12) * 360) + 90
     hourHand.style.transform = `rotate(${hourDegree}deg)`
+
+    //include conditional for seconds about removing and then adding transition near 59-0 second mark
 }
 
 setInterval(setDate, 1000);
